@@ -3,55 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamesera</title>
+    <title>Free Game Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">Gamesera</div>
+        <div class="logo">Free Game Store</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
 
-    <main> 
-        
+    <main>
+        <!-- Search Bar -->
         <section id="search">
-        <input type="text" id="searchInput" placeholder="Search for a game or software..." onkeyup="searchGames()">
+            <input type="text" id="searchInput" placeholder="Search for a game..." onkeyup="searchGames()">
         </section>
-    
-    <section id="home">
-        <h1>Welcome to Gamesera</h1>
-        <p>Download and enjoy the best free games!</p>
-        <p>More games and softwares are coming soon</p>
-        <div class="game-list">
-            <div class="game-card">
-                <img src="images/download.png" alt="how to download">
-                <h3>how to download</h3>
-                <p>and enjoy.</p>
-                <a href="download.html">Learn More</a>
-            </div>
-            <div class="game-card">
-                <img src="images/GTA V.jpg" alt="GTA V">
-                <h3>GTA V</h3>
-                <p>A fun and exciting game.</p>
-                <a href="GTA V.html">Learn More</a>
-            </div>
-            <div class="game-card">
-                <img src="images/game2.jpg" alt="Game 2">
-                <h3>Game Title 2</h3>
-                <p>An action-packed adventure game.</p>
-                <a href="game2.html">Learn More</a>
-            </div>
-        </div>
-    </section>
 
-        </main>
-    
+        <section id="home">
+            <h1>Welcome to Free Game Store</h1>
+            <p>Download and play amazing games for free</p>
+            <div id="gameList" class="game-list">
+                <div class="game-card" data-title="download">
+                    <img src="images/download.png" alt="how to download">
+                    <h3>How to Download</h3>
+                    <a href="download.html" class="details-button">See</a>
+                </div>
+                <div class="game-card" data-title="GTA V">
+                    <img src="images/GTA V.jpg" alt="GTA V">
+                    <h3>GTA V</h3>
+                    <p>An exciting and fun game.</p>
+                    <a href="GTA V.html" class="details-button">Download</a>
+                </div>
+                <div class="game-card" data-title="Game Title 2">
+                    <img src="images/game2.jpg" alt="Game 2">
+                    <h3>Game Title 2</h3>
+                    <p>An action-packed adventure game.</p>
+                    <a href="game2.html" class="details-button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>© 2024 Gamesera. All rights reserved.</p>
+        <p>© 2024 Free Game Store. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
