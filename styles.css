@@ -80,6 +80,24 @@ section {
     border-radius: 5px;
 }
 
+#search {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
 footer {
     background-color: #333;
     color: white;
